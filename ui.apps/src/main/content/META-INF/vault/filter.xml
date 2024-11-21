@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-commons/clientlibs"/>
+    <filter root="/apps/aem-commons/components"/>
+    <filter root="/apps/msm/aem-commons_blueprint"/>
+</workspaceFilter>
