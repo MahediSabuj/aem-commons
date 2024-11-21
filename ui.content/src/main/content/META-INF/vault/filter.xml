@@ -3,6 +3,5 @@
     <filter root="/conf/aem-commons" mode="merge"/>
     <filter root="/content/aem-commons" mode="merge"/>
     <filter root="/content/dam/aem-commons" mode="merge"/>
-    <filter root="/content/dam/aem-commons/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/aem-commons" mode="merge"/>
 </workspaceFilter>
