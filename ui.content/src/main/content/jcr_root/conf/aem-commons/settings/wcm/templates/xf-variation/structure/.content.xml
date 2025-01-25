@@ -3,10 +3,10 @@
     jcr:primaryType="cq:Page">
     <jcr:content jcr:primaryType="cq:PageContent"
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/aem-commons/settings/wcm/templates/empty-experience-fragment"
-        sling:resourceType="aem-commons/components/xfpage">
+        cq:template="/conf/aem-commons/settings/wcm/templates/xf-variation"
+        sling:resourceType="aem-commons/components/structure/xf-page">
         <root jcr:primaryType="nt:unstructured"
-            sling:resourceType="aem-commons/components/container"
+            sling:resourceType="aem-commons/components/content/container"
             editable="{Boolean}true"
             layout="responsiveGrid"/>
         <cq:responsive jcr:primaryType="nt:unstructured">

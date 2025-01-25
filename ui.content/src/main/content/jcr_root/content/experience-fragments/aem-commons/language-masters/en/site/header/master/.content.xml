@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content jcr:primaryType="cq:PageContent"
         cq:tags="[]"
-        cq:template="/conf/aem-commons/settings/wcm/templates/xf-web-variation"
+        cq:template="/conf/aem-commons/settings/wcm/templates/xf-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:title="Header"
-        sling:resourceType="aem-commons/components/xfpage">
+        sling:resourceType="aem-commons/components/structure/xf-page">
         <root jcr:primaryType="nt:unstructured"
-            sling:resourceType="aem-commons/components/container"
+            sling:resourceType="aem-commons/components/content/container"
             layout="simple">
             <navigation jcr:primaryType="nt:unstructured"
                 sling:resourceType="aem-commons/components/navigation"
@@ -23,7 +23,7 @@
                 structureDepth="2"/>
             <search jcr:primaryType="nt:unstructured"
                 sling:resourceType="aem-commons/components/search"
-                searchRoot="/content/aem-commons/en"/>
+                searchRoot="/content/aem-commons/us/en"/>
         </root>
     </jcr:content>
 </jcr:root>
