@@ -4,6 +4,33 @@
     jcr:primaryType="cq:Page">
     <aem-commons jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <container jcr:primaryType="nt:unstructured">
+                    <policy jcr:primaryType="nt:unstructured"
+                        jcr:description="Allows the container components."
+                        jcr:title="Page Content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:AEM Commons - Container, group:AEM Commons - Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy>
+                </container>
+                <experience-fragment jcr:primaryType="nt:unstructured">
+                    <policy_header jcr:primaryType="nt:unstructured"
+                        cq:styleDefaultElement="header"
+                        jcr:description="Sets a &lt;header> element on the page header experience fragment."
+                        jcr:title="Page Header"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_header>
+                    <policy_footer jcr:primaryType="nt:unstructured"
+                        cq:styleDefaultElement="footer"
+                        jcr:description="Sets a &lt;footer> element on the page footer experience fragment."
+                        jcr:title="Page Footer"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_footer>
+                </experience-fragment>
+            </content>
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container jcr:primaryType="nt:unstructured"
