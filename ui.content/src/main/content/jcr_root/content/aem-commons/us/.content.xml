@@ -3,8 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content jcr:primaryType="cq:PageContent"
         cq:redirectTarget="/content/aem-commons/us/en"
-        cq:template="/conf/aem-commons/settings/wcm/templates/page-content"
+        cq:template="/conf/aem-commons/settings/wcm/templates/country-page"
         jcr:title="United States"
-        sling:resourceType="aem-commons/components/page"/>
+        sling:resourceType="aem-commons/components/structure/country-page"/>
     <en/>
 </jcr:root>
