@@ -11,7 +11,7 @@
                 cq:policy="aem-commons/components/content/experience-fragment/policy_header"
                 sling:resourceType="wcm/core/components/policies/mapping"/>
             <container jcr:primaryType="nt:unstructured"
-                cq:policy="aem-commons/components/content/container/policy"
+                cq:policy="aem-commons/components/content/container/policy_main"
                 sling:resourceType="wcm/core/components/policies/mapping">
                 <container jcr:primaryType="nt:unstructured"
                     cq:policy="aem-commons/components/content/container/policy"

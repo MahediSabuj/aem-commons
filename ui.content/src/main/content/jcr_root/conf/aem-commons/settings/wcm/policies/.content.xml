@@ -6,13 +6,13 @@
         <components jcr:primaryType="nt:unstructured">
             <content jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
-                    <policy jcr:primaryType="nt:unstructured"
+                    <policy_main jcr:primaryType="nt:unstructured"
                         jcr:description="Allows the container components."
-                        jcr:title="Page Content"
-                        sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:AEM Commons - Container,group:AEM Commons - Content]">
+                        jcr:title="Page Main"
+                        cq:styleDefaultElement="main"
+                        sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </policy>
+                    </policy_main>
                 </container>
                 <experience-fragment jcr:primaryType="nt:unstructured">
                     <policy_header jcr:primaryType="nt:unstructured"
