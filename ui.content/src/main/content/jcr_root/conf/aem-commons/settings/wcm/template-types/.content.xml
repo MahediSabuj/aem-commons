@@ -3,5 +3,9 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <xf/>
-    <page/>
+    <content-page/>
+    <country-page/>
+    <landing-page/>
+    <language-page/>
+    <root-page/>
 </jcr:root>

@@ -5,12 +5,12 @@
         cq:allowedTemplates="[/conf/aem-commons/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/aem-commons"
         cq:redirectTarget="/content/aem-commons/us/en"
-        cq:template="/conf/aem-commons/settings/wcm/templates/page-content"
+        cq:template="/conf/aem-commons/settings/wcm/templates/root-page"
         jcr:title="AEM Commons"
         sling:configRef="/conf/aem-commons"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
-        sling:resourceType="aem-commons/components/page"/>
+        sling:resourceType="aem-commons/components/structure/root-page"/>
     <language-masters/>
     <us/>
 </jcr:root>
