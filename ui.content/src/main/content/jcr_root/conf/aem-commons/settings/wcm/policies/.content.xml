@@ -6,6 +6,13 @@
         <components jcr:primaryType="nt:unstructured">
             <content jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
+                    <policy_root jcr:primaryType="nt:unstructured"
+                        jcr:description="Allows the container components."
+                        jcr:title="Page Content"
+                        components="[group:AEM Commons - Content,group:AEM Commons - Container,group:AEM Commons - Structure]"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_root>
                     <policy_main jcr:primaryType="nt:unstructured"
                         jcr:description="Allows the container components."
                         jcr:title="Page Main"
@@ -13,6 +20,20 @@
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_main>
+                    <policy_content jcr:primaryType="nt:unstructured"
+                        jcr:description="Allows the container components."
+                        jcr:title="Page Content"
+                        components="[group:AEM Commons - Content,group:AEM Commons - Container]"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_content>
+                    <policy_xf jcr:primaryType="nt:unstructured"
+                        jcr:description="Allows the container components."
+                        jcr:title="XF Root"
+                        components="[group:AEM Commons - Content,group:AEM Commons - Container]"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_xf>
                 </container>
                 <experience-fragment jcr:primaryType="nt:unstructured">
                     <policy_header jcr:primaryType="nt:unstructured"
@@ -31,6 +52,18 @@
                     </policy_footer>
                 </experience-fragment>
             </content>
+            <structure jcr:primaryType="nt:unstructured">
+                <base-page jcr:primaryType="nt:unstructured">
+                    <policy jcr:primaryType="nt:unstructured"
+                        jcr:description="Includes the required client libraries."
+                        jcr:title="Generic Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[aem-commons.dependencies,aem-commons.site]"
+                        clientlibsJsHead="aem-commons.dependencies">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy>
+                </base-page>
+            </structure>
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container jcr:primaryType="nt:unstructured"
@@ -178,109 +211,6 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
             </title>
-            <experiencefragment jcr:primaryType="nt:unstructured">
-                <policy_header jcr:primaryType="nt:unstructured"
-                    cq:styleDefaultElement="header"
-                    jcr:description="Sets a &lt;header> element on the page header experience fragment."
-                    jcr:title="Page Header"
-                    sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_header>
-                <policy_footer jcr:primaryType="nt:unstructured"
-                    cq:styleDefaultElement="footer"
-                    jcr:description="Sets a &lt;footer> element on the page footer experience fragment."
-                    jcr:title="Page Footer"
-                    sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_footer>
-            </experiencefragment>
-            <container jcr:primaryType="nt:unstructured">
-                <policy_1574694950110 jcr:primaryType="nt:unstructured"
-                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:title="Page Root"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Commons - Content,/apps/aem-commons/components/form/container,group:AEM Commons - Structure]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575024218483 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-commons/components/image"/>
-                            <mapping_1575030843388 jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-commons/components/experiencefragment"/>
-                            <mapping_1575030853128 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-commons/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1574694950110>
-                <policy_1574695586800 jcr:primaryType="nt:unstructured"
-                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:title="Page Content"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Commons - Content,/apps/aem-commons/components/form/container]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575030255082 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-commons/components/image"/>
-                            <mapping_1575030260142 jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-commons/components/experiencefragment"/>
-                            <mapping_1575030269139 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-commons/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1574695586800>
-                <policy_649128221558427 jcr:primaryType="nt:unstructured"
-                    cq:styleDefaultElement="main"
-                    jcr:description="Sets a &lt;main> element on the page content area."
-                    jcr:title="Page Main"
-                    sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_649128221558427>
-                <policy_1575040440977 jcr:primaryType="nt:unstructured"
-                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:title="XF Root"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Commons - Content,/apps/aem-commons/components/form/container]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575024218483 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-commons/components/image"/>
-                            <mapping_1575030843388 jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-commons/components/experiencefragment"/>
-                            <mapping_1575030853128 jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-commons/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1575040440977>
-            </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650 jcr:primaryType="nt:unstructured"
                     jcr:description="Sets the title size to H3."
@@ -303,16 +233,6 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1575032193319>
             </download>
-            <page jcr:primaryType="nt:unstructured">
-                <policy jcr:primaryType="nt:unstructured"
-                    jcr:description="Includes the required client libraries."
-                    jcr:title="Generic Page"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[aem-commons.dependencies,aem-commons.site]"
-                    clientlibsJsHead="aem-commons.dependencies">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy>
-            </page>
         </components>
     </aem-commons>
     <wcm jcr:primaryType="nt:unstructured">
