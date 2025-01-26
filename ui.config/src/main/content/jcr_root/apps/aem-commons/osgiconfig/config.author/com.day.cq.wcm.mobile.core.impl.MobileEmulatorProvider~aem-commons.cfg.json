@@ -1,6 +1,11 @@
 {
   "mobile.resourceTypes": [
-    "aem-commons/components/page"
+    "aem-commons/components/structure/root-page",
+    "aem-commons/components/structure/landing-page",
+    "aem-commons/components/structure/country-page",
+    "aem-commons/components/structure/language-page",
+    "aem-commons/components/structure/content-page",
+    "aem-commons/components/structure/xf-variation"
   ],
   "README": "Indicate which page resource types should display the mobile emulators."
 }
