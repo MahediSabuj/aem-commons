@@ -1,0 +1,4 @@
+{
+  "service.ranking": "100",
+  "user.mapping": ["aem-commons.core:writeService=aem-commons-service-user"]
+}
